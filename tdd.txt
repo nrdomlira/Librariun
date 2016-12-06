@@ -1,0 +1,25 @@
+Void
+cadastra_aluno_valido():
+Valida todas as informações passada pelo aluno, após passarem nos testes de negócio.
+
+Void
+cadastra_funcionario_valido():
+Valida todas as informações passada pelo funcionário, após passarem nos testes de negócio.
+
+Void
+reservar_livro_sucesso():
+Cadastra um livro na lista de reservas, após o teste validar as informações e passar no teste de negócio.
+
+Void
+mensagem_dev_sucesso():
+Manda uma mensagem para os desenvolvedores, após identificar as informações do usuário.
+
+
+Void
+alugar_livro():
+Cadastra o livro na lista de alugado, após o teste validar as informações do usuário e ter sido aprovado no(s) teste(s) de negócio.
+
+
+Void
+consulta_livro_alugado():
+Exibe todos os livros alugados referênciado pelo título, após a validação das informações. 
