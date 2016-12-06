@@ -1,0 +1,5 @@
+Eu como bibliotecario preciso fazer um alugel de um livro
+Criterio de aceitação: Bibliotecario deve alugar um livro para um aluno ou funcionário
+Given: Eu digito a matricula do aluno ou identificador do funcionario, e o livro ser emprestado
+When: Eu clicar para fazer o alugel
+Then: O livro deve ser alugado para o aluno ou funcionario, se estiver disponivel
