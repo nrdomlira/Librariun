@@ -1,0 +1,6 @@
+Eu como aluno preciso realizar meu cadastro.
+Critério de aceitação: Usuário aluno fará seu próprio cadastro
+Given Eu tenho meu CPF
+And meus outros dados
+When Eu clicar para realizar o cadastro
+Then deve ter um usuário cadastrado com os meus dados no site
