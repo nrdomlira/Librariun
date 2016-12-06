@@ -1,0 +1,6 @@
+Eu como funcinário preciso me cadastrar no sistema.
+Critério de aceitação: Funcionário fará seu próprio cadastro.
+Given Eu tenho meu id de funcionário,
+And meus outros dados,
+When Eu clicar para realizar o cadastro,
+Then deve ter um usuário cadastrado com os meus dados no site.
