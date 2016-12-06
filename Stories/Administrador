@@ -1,0 +1,5 @@
+Eu como administrador preciso poder entrar em contato com os desenvolvedores
+Criterio de aceitação: Usuário entrará em contato com os desenvolvedores
+Given: Eu digito no local designado o problema a ser informado
+When: Eu clicar em enviar a mensagem
+Then: A mensagem deverá ser enviada
