@@ -1,0 +1,5 @@
+Eu como bibliotecário necessito consultar quais livros foram alugados.
+Critério de aceitação: Bibliotecário verificará se um livro pode ser alugado
+Given os dados de busca
+When eu clicar para pesquisar
+Then deve aparecer uma lista com o livro indicando sua disponibilidade
