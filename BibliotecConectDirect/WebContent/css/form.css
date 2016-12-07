@@ -1,0 +1,33 @@
+@charset "UTF-8";
+form{
+    margin: auto;
+    width: 600px;
+}
+form p{
+    position: relative;
+    padding: -20px;
+    font-size: 18px;
+}
+input{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    padding: 5px;
+}
+input:hover{
+    background-color: #2A8273;
+}
+
+legend{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+fieldset{
+    border-color: #606060;
+    margin: 20px;
+}
+.formulariobaixo{
+    margin-bottom: 200px;
+}
+

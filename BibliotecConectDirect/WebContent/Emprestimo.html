@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+ <title>Bibliotec/Emprestimo</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+      <link rel="stylesheet" href="css/form.css">
+    <script src="javascript/funcoes.js"></script>
+</head>
+<body>
+
+<div id="interface">
+    <header id="cabecalho"> <!-- cabecalho do site-->
+<hgroup>    <!--grupo criado-->
+<h1>Bibliotec</h1>
+<h2>Sistema de Gerenciamento</h2>
+</hgroup>
+
+        <img id="icone"src="image/icone-endereco.png" alt="home"/>
+
+<nav id="menu">
+    <h1>Menu Principal</h1>
+    <ul type="">
+        <li onmouseover="mudaFoto('image/icone-endereco.png')"onmouseout="mudaFoto('image/folder.png')"><a href="home.jsp">Home</a></li>
+        <li onmouseover="mudaFoto('image/folder.png')"onmouseout="mudaFoto('image/folder.png')"><a href="reserva.html">Reservas</a></li>
+        <li onmouseover="mudaFoto('image/folder.png')"onmouseout="mudaFoto('image/folder.png')"><a href="Emprestimo.html">Emprestimo</a></li>
+        <li onmouseover="mudaFoto('image/icone-contato.png')"onmouseout="mudaFoto('image/folder.png')"><a href="usuarios.html">Usuários</a></li>
+        <li onmouseover="mudaFoto('image/arquivo.png')"onmouseout="mudaFoto('image/folder.png')"><a href="Produtos.html">Produtos</a></li>
+        <li onmouseover="mudaFoto('image/contato.png')"onmouseout="mudaFoto('image/folder.png')"><a href="faleConosco.html">Fale Conosco</a></li>
+        <li><a href="index0.html">Sair</a></li>
+    </ul>
+</nav>
+</header>
+<h2>Opções para Emprestimos:</h2>
+    <p>Escolha uma das opções:</p>
+    <a href="EmprestimoDisponiveis.jsp"><input type="submit" id="cadastraFunc"value="Cadastrar Emprestimo"></a>
+    <a href="ListarEmprestimo.jsp"><input type="submit" id="listarFunc"value="Listar Emprestimo"></a>
+    <a href="Devolucao.jsp"><input type="submit" id="listarFunc"value="Devolução de Emprestimo"></a>
+    <br>  <br>  <br>  <br>  <br>
+
+     <footer id="rodape">
+    <p>Copyright &copy; 2016 - by Marcelo Augusto | Lucas de Melo | José Domingos<br/>
+    <a href="http://www.google.com" target="_blank">Facebook </a>|<!--o target abre uma nova aba -->
+     <a href="http://www.google.com"target="_blank">Twitter</a></p>
+    </footer>
+</div>
+</body>
+</html>

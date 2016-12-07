@@ -1,0 +1,148 @@
+@charset "UTF-8";
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+body{
+    background-color: #2A8273;
+    color: rgba(47, 36, 41, 0.64);
+    font-family: 'Trebuchet MS', sans-serif,sans-serif;
+}
+a{
+    color:#606060;
+    text-decoration: none;/*não possui sublinhagem*/
+}
+a:hover{/*quando passar o mouse encima do link ele ficara sublinhado*/
+    text-decoration: underline;
+}
+div#interface {
+    width: 1000px;/* largura*/
+    background-color: white;/*cor da div*/
+    margin: -21px auto 0px auto;/*centralizando utilizando margens*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5); /*rgba sonbra das bordas*/
+    padding: 10px 10px 10px 10px;/**/
+}
+header#cabecalho img#icone{/*edita a imagem do oculos*/
+    position: absolute;
+    left: 1000px;
+    top: 40px;
+}
+header#cabecalho{/* criação das lmitações do cabeçalho*/
+    border-bottom: 1px #606060 solid;/*linha q separa(existem outros formatos)*/
+    height: 100px;/*limita a barra*/
+}
+header#cabecalho h1{/*edição do nome principal*/
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 30pt;
+    color:#606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;/*aproximando da margem de baixo*/
+}
+header#cabecalho h2{
+    font-family: 'Trebuchet MS', sans-serif;/*setando fonte css*/
+    color:#88888;
+    fonr-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;/*aproximando da margem de cima*/
+}
+
+
+nav#menu{
+    display: block;
+}
+/* formatando menu*/
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: absolute;
+    top:-2px;
+    left: 400px;
+}
+nav#menu li{
+    display: inline;/*coloca em linha os itens*/
+    background-color: #dddddd;
+    padding: 10px; /*espaçamento dentro da caixa*/
+    margin: 2px;
+    transition: background-color 1s;/*transicao dos itens do menu*/
+}
+nav#menu li:hover{
+    background-color: #606060;
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu a{
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover{/* o hover ele altera a cor*/
+    color: white;
+}
+section#corpo{
+    display: block;
+    width: 480px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+article#noticia h2,aside h2{
+    font-size:12px;
+    color:#black;
+    background-color: #b6b6b6;
+    padding:5px 0px 5px 15px;
+    margin: 10px 5px 15px 0px;
+}
+table#tabelaEntrega{/* tabela*/
+    border: 1px solid #606060;/*borda da tabela*/
+    border-spacing: 0px;/*espaçamentos entre as linhas da tabela*/
+    margin-left: auto;/*centralização*/
+    margin-right: auto;
+}
+table#tabelaEntrega td{
+    border: 1px solid;/*linhas da tabela*/
+    padding: 10px;/*espaçamento dentro das celulas da tabela*/
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+table#tabelaFuncionarios{/* tabela*/
+    border: 1px solid #606060;/*borda da tabela*/
+    border-spacing: 0px;/*espaçamentos entre as linhas da tabela*/
+    margin-left: auto;/*centralização*/
+    margin-right: auto;
+}
+table#tabelaFuncionarios td{
+    border: 1px solid;/*linhas da tabela*/
+    padding: 10px;/*espaçamento dentro das celulas da tabela*/
+    text-align: center;
+    vertical-align: middle;
+}
+table#tabelaFuncionarios td.top{/*editando informações da coluna do topo tabela*/
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaFuncionarios td.down{/*editando informações da coluna de baixo da tabela*/
+
+    background-color: #cecece;
+    vertical-align: top;
+    font-weight: bold;
+}
+table#tabelaFuncionarios caption{
+    color: rgba(56, 56, 56, 0.54);
+    font-size:19px;
+    font-weight: bold;
+}
+
+
+footer#rodape{
+    clear: both;/*bloqueia artigo*/
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}

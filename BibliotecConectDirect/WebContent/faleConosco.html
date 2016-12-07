@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Bibliotec/Reclamações</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/form.css">
+      <script src="javascript/Validadores.js"></script>
+    <script src="javascript/funcoes.js"></script>
+    <script>
+    function confirmaReclamação(){
+    	var x=confirm("Confirmar Envio")
+    	if(x==true){
+    		alert("Enviado com Sucesso!");
+    		location.href="/BibliotecConectDirect/home.jsp"; 
+    	}
+    }
+    
+    </script>
+</head>
+<body>
+<div id="interface">
+    <header id="cabecalho"> <!-- cabecalho do site-->
+        <hgroup>    <!--grupo criado-->
+            <h1>Bibliotec</h1>
+            <h2>Sistema de Gerenciamento</h2>
+        </hgroup>
+
+        <img id="icone"src="image/contato.png"alt="fale conosco"/>
+
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="">
+                <li onmouseover="mudaFoto('image/icone-endereco.png')"onmouseout="mudaFoto('image/contato.png')"><a href="home.jsp"alt="link da home">Home</a></li>
+                <li onmouseover="mudaFoto('image/reserva.png')"onmouseout="mudaFoto('image/contato.png')"><a href="reserva.html"alt="link da reserva">Reservas</a></li>
+               <li onmouseover="mudaFoto('image/folder.png')"onmouseout="mudaFoto('image/contato.png')"><a href="Emprestimo.html"alt="link de emprestimo">Emprestimo</a></li>
+                <li onmouseover="mudaFoto('image/icone-contato.png')"onmouseout="mudaFoto('image/contato.png')"><a href="usuarios.html"alt="link de usuarios">Usuários</a></li>
+                <li onmouseover="mudaFoto('image/arquivo.png')"onmouseout="mudaFoto('image/contato.png')"><a href="Produtos.html"alt="link para produtos">Produtos</a></li>
+                <li onmouseover="mudaFoto('image/contato.png')"onmouseout="mudaFoto('image/contato.png')"><a href="faleConosco.html"alt="link para fale conosco">Fale Conosco</a></li>
+                <li><a href="index0.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Registre sua Reclamação</h2>
+    <p>É nescessário preencher todos os campos</p>
+    <form id="formulario"method="get"action="mailto:[b]marceloacioli00@gmail.com[/b]" type="text/plain"alt="formularios para registro de reclamação">
+        <fieldset id="reserva "class="formulariobaixo"><legend>Reclamação</legend>
+            <p><label for="nomeReclamacao">Nome:</label>
+                <input type="text"id="nomeReclamacao" size="40" maxlength="40" placeholder="Nome Completo"required/></p>
+             <p>  <label for="telefoneAluno">Telefone:</label>
+                <input type="text"name="telefoneAlunoo"id="telefoneAluno"onKeyPress="MascaraTelefone(formulario.telefoneAlunoo);" required
+					maxlength="15"  onBlur="ValidaTelefone(formulario.telefoneAlunoo);"placeholder="Telefone"
+               /></p>
+            <p><label for="gravidadeReclamacao">Gravidade:</label>
+            Min<input type="range" id="gravidadeReclamacao"min="0" max="10" step="5">Max </p>
+            <p><label for="mensagemReclamacao">Mensagem:</label>
+                <textarea id="mensagemReclamacao" cols="40" rows="5" placeholder="Digite sua Mensagem"required></textarea></p>
+            <input type="submit" id="btnEnviaReclamacao" onclick="confirmaReclamação()">
+        </fieldset>
+    </form>
+
+
+    <footer id="rodape">
+        <p>Copyright &copy; 2016 - by Marcelo Augusto | Lucas de Melo | José Domingos<br/>
+            <a href="http://www.google.com" target="_blank">Facebook </a>|<!--o target abre uma nova aba -->
+            <a href="http://www.google.com"target="_blank">Twitter</a></p>
+    </footer>
+</div>
+</body>
+</html>
